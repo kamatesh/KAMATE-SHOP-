@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kamate Shop — Boutique en ligne</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b63ce, #1646a0);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 70px 6%;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #123f91;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #555;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .hero-button {
+      display: inline-block;
+      margin-top: 28px;
+      background: #0b63ce;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 50px 6%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product-image {
+      height: 190px;
+      background: #eef3f9;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #777;
+      font-size: 18px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #0b63ce;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .delivery {
+      color: #198754;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .order {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .about {
+      background: white;
+      padding: 55px 6%;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    footer {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer p {
+      margin: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      header {
+        padding: 15px 4%;
+      }
+
+      .logo {
+        font-size: 21px;
+      }
+
+      .whatsapp {
+        padding: 9px 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">KAMATE SHOP</div>
+
+    <a class="whatsapp"
+       href="https://wa.me/22364007633"
+       target="_blank">
+       WhatsApp
+    </a>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenue chez Kamate Shop</h1>
+
+    <p>
+      Découvrez nos produits sélectionnés avec soin.
+      Commandez facilement et profitez de notre service de livraison à Bamako.
+    </p>
+
+    <a class="hero-button"
+       href="https://wa.me/22364007633"
+       target="_blank">
+       Commander sur WhatsApp
+    </a>
+  </section>
+
+  <section class="products">
+
+    <h2>Nos produits</h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+
+        <div class="product-image">
+          Photo du produit
+        </div>
+
+        <h3>Mocassins en cuir vernis</h3>
+
+        <p>
+          Élégants, confortables et de haute qualité.
+          Pointures disponibles : 40 à 46.
+        </p>
+
+        <div class="price">
+          22 500 F
+        </div>
+
+        <div class="delivery">
+          Livraison gratuite à Bamako
+        </div>
+
+        <a class="order"
+           href="https://wa.me/22364007633?text=Bonjour%20Kamate%20Shop%2C%20je%20suis%20intéressé%20par%20les%20mocassins."
+           target="_blank">
+           Commander
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about">
+
+    <h2>À propos de Kamate Shop</h2>
+
+    <p>
+      Kamate Shop est une boutique en ligne qui propose des produits
+      sélectionnés pour répondre aux besoins de ses clients.
+      Nous mettons l'accent sur la qualité, le sérieux et la satisfaction
+      de nos clients.
+    </p>
+
+  </section>
+
+  <footer>
+
+    <p><strong>KAMATE SHOP</strong></p>
+
+    <p>Votre boutique en ligne</p>
+
+    <p>📱 64 00 76 33</p>
+
+    <p>© 2026 Kamate Shop — Tous droits réservés</p>
+
+  </footer>
+
+</body>
+</html>
